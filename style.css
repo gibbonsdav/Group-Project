@@ -1,0 +1,15 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background: url("assets/background.jpg");
+  background-size: cover;
+  background-blend-mode: soft-light;
+  background-color: rgb(0, 0, 0, 0.1);
+}
