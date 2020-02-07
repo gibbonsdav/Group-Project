@@ -73,3 +73,22 @@ body {
 #ptext {
   padding: 150px;
 }
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  background-color: #bce4f5;
+  margin-top: -7px;
+}
+.searchbar {
+  border: 1px solid grey;
+  border-radius: 18px;
+  margin-left: 60px;
+  width: 375px;
+}
+.searchIcon {
+  position: relative;
+  margin-left: 190px;
+  top: -3px;
+}
