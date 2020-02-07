@@ -13,3 +13,63 @@ body {
   background-blend-mode: soft-light;
   background-color: rgb(0, 0, 0, 0.1);
 }
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+#main {
+  width: 1000px;
+  display: flex;
+  justify-self: center;
+  margin-top: 45px;
+  position: relative;
+}
+
+#main img {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#pasta {
+  width: 300px;
+}
+
+#salad {
+  width: 300px;
+}
+
+#specials {
+  background-color: #f4f4f4;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  grid-template-areas:
+    "pasta ptext"
+    "salad stext";
+}
+
+#specials #salad {
+  grid-area: salad;
+}
+
+#specials #stext {
+  grid-area: stext;
+}
+
+#specials #pasta {
+  grid-area: pasta;
+}
+
+#specials #ptext {
+  grid-area: ptext;
+}
+
+#ptext {
+  padding: 150px;
+}
