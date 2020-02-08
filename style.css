@@ -82,7 +82,7 @@ body {
 #tabs {
   width: 1000px;
   background-color: white;
-  height: 500px;
+  height: 800px;
   padding: 0;
   list-style: none;
   display: flex;
@@ -109,6 +109,12 @@ body {
 
 .show {
   display: block;
+}
+
+#menudisplay {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: normal;
 }
 
 #tabs a.active {
@@ -144,4 +150,39 @@ p {
   position: relative;
   margin-left: 190px;
   top: -3px;
+}
+
+.ContactUs {
+  display: flex;
+  background: grey;
+  padding: 40px;
+}
+.CDetails {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+}
+#Google {
+  margin-left: 140px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid grey;
+  border-radius: 18px;
+}
+.ContactUs input {
+  height: 32px;
+}
+#Submit {
+  width: 52px;
+  margin-top: 9px;
+  height: 21px;
+}
+#Comments {
+  height: 85px;
+}
+.CDetails input {
+  width: 200px;
+}
+.Contact {
+  margin-top: -20px;
 }

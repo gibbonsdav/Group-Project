@@ -44,61 +44,92 @@
         </div>
       </div>
       <div class="threetabs">
-          <ul id="tabs">
-            <li>
-            <a class="active" href="#menu" id="menu">Menu</a>
-            <div id="menudisplay" class="content show">
-              <!-- this is where the menu will go -->
-              
-            </div>
-          </li>
+        <ul id="tabs">
           <li>
-            <a href="#story" id="story">Our Story</a>
-            <div class="content">
-              <p>Ohana is an idea in Hawaiian culture. The word ʻohana means welcome in the Hawaiian language, but in a much wider sense, to include not only one's closer relatives, but also one's cousins, in-laws, friends, race, and other neighbours. <br> Our cuisine incorporates five distinct styles of food, reflecting the diverse food history of settlement and immigration in the Hawaiian Islands. In the pre-contact period of Ancient Hawaii, Polynesian voyagers brought plants and animals to the Islands.</p>
-            </div>
-          </li>
-          <li>
-            <a href="#reservations" id="reservations">Reservations</a>
-            <div class="content">
-              <form>
-                <fieldset>
-                  <div>
-                    <label for="firstname">FIRST NAME</label>
-                    <input type="text" id="firstname" placeholder="John" />
-                  </div>
-                  <div>
-                    <label for="lastname">LAST NAME</label>
-                    <input type="text" id="lastname" placeholder="Doe" />
-                  </div>
-                  <div>
-                    <label for="email">EMAIL ADDRESS</label>
-                    <input type="email" id="email" placeholder="johndoe@email.com" />
-                  </div>
-                  <div>
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" id="phone" placeholder="+351 999 9999" />
-                  </div>
-                  <div>
-                    <label for="specialrequests">Special Table Requests</label>
-                    <textarea id="affiliations"></textarea>
-                  </div>
-                  <div>
-                    <label for="partysize">Number in Party</label>
-                    
-                      <input type="number" name="partysize">
-                    </select>
-                  </div>
-                  <div>
-                    <button type="submit">Submit</button>
-                  </div>
-          </li>
-            </div>
+          <a class="active" href="#menu" id="menu">Menu</a>
+          <div id="menudisplay" class="content show">
+            <!-- this is where the menu will go -->
             
+          </div>
+        </li>
 
+        <li>
+          <a href="#story" id="story">Our Story</a>
+          <div class="content">
+            <p>Ohana is an idea in Hawaiian culture. The word ʻohana means welcome in the Hawaiian language, but in a much wider sense, to include not only one's closer relatives, but also one's cousins, in-laws, friends, race, and other neighbours. <br> Our cuisine incorporates five distinct styles of food, reflecting the diverse food history of settlement and immigration in the Hawaiian Islands. In the pre-contact period of Ancient Hawaii, Polynesian voyagers brought plants and animals to the Islands.</p>
+          </div>
+        </li>
 
-          </ul>
+      <li>
+      <a href="#reservations" id="reservations">Reservations</a>
+      <div class="content">
+        <form>
+          <fieldset>
+            <div>
+              <label for="firstname">FIRST NAME</label>
+              <input type="text" id="firstname" placeholder="John" />
+            </div>
+            <div>
+              <label for="lastname">LAST NAME</label>
+              <input type="text" id="lastname" placeholder="Doe" />
+            </div>
+            <div>
+              <label for="email">EMAIL ADDRESS</label>
+              <input type="email" id="email" placeholder="johndoe@email.com" />
+            </div>
+            <div>
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" placeholder="+351 999 9999" />
+            </div>
+            <div>
+              <label for="specialrequests">Special Table Requests</label>
+              <textarea id="affiliations"></textarea>
+            </div>
+            <div>
+              <label for="partysize">Number in Party</label>
+              
+                <input type="number" name="partysize">
+              </select>
+            </div>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+          </li>
+        </ul>
         </div>
+        <footer class="Bottom">
+          <div class="ContactUs">
+            <form class="CDetails">
+              <h2 class="Contact">Contact us!</h2>
+              <label for="FirstName">First Name</label>
+              <input id="FirstName" type="text" placeholder="Your first name">
+              <label for="LastName">Last Name</label>
+              <input id="LastName" type="text" placeholder="Your last name">
+              <label for="Email">Email</label>
+              <input type="email" id="Email" placeholder="you@example.com">
+              <label for="EmailSign">Would you like to sign-up for newsletters?</label>
+              <input type="checkbox" id="EmailSign">
+              <label for="Comments">Your comments</label>
+              <textarea id="Comments" placeholder="tell, or ask us anything!"></textarea>
+              <button id="Submit">Submit</button>
+            </form>
+            <iframe id="Google" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBe5CsprDyIARIjNsrohRExQ&key=AIzaSyD1OXEVTltgeSGqoNoe3ScES_-6AXHbT5A" allowfullscreen></iframe>
+          </div>
+          <div class="FAQs">
+            <button href="#FAQ" class="Freq">FAQ</button>
+            <button href="#Careers" class="Careers">Careers</button>
+            <button href="#T&C" class="T&C">Terms & Conditions</button>
+            <button href="#GCs" class="Gifts">Gifts & Merch</button>
+            <button href="#BusinessInq" class="Business">Business Inquiries</button>
+            <button href="#FB" class="Facebook"><i class="fab fa-facebook-f"></i></button>
+            <button href="#Twit" class="Twitter"><i class="fab fa-twitter"></i></button>
+            <button href="#IG" class="Instagram"><i class="fab fa-instagram"></i></button>
+            <p class="BAddress">1112 S Casino Center Blvd, Las Vegas, NV 89104</p>
+            <p class="BPhone">P. (702) 560-5326</p>
+          </div>
+        </footer>
+
+      
     
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"

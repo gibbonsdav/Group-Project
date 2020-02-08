@@ -8,29 +8,70 @@ $(document).ready(function(e) {
       .find("+ .content")
       .addClass("show")
   })
-  $.get("https://obscure-tundra-54269.herokuapp.com/casual-dining", function(
+  $.get(“https://obscure-tundra-54269.herokuapp.com/casual-dining”, function(
     data
   ) {
     var apps = data.appetizers.map(function(item) {
       return `
-    <div class="menu3>
-    <p class="menutest>${item.name}</p>
+    <div id=“#menudisplay”>
+    <p class=“menutest”>${item.name}</p>
+    <h3>${item.price}</h3>
+  <h6>${item.description}</h6>
+  <h6>${item.extra}</h6>
     </div>
     `
     })
-    var entree = data.entrees
-      .map(function(item) {
-        return `
-  <div class="menu3>
-  <p class="menutest>${item.name}</p>
+    var entree = data.entrees.map(function(item) {
+      return `
+  <div class=“menu4">
+  <p class=“menutest2”>${item.name}</p>
+  <h3>${item.price}</h3>
+  <h6>${item.description}</h6>
+  <h6>${item.extra}</h6>
   </div>
   `
+    })
+    var dessert = data.desserts
+      .map(function(item) {
+        return `
+  <div class=“menu4">
+  <h3>${item.price}</h3>
+  <p class=“menutest2”>${item.name}</p>
+  <h3>${item.price}</h3>
+  <h6>${item.description}</h6>
+  <h6>${item.extra}</h6>
+  </div>
+`
       })
+.join("\n")
+   $("#menudisplay").html(apps)
+   })
 
-      .join("\n")
-    $("#menudisplay").html(apps)
-    $("#menudisplay").html(entree)
-  })
+
+
+
+
+  // $.get("https://obscure-tundra-54269.herokuapp.com/casual-dining", function(
+  //   data
+  // ) {
+  //   var apps = data.appetizers
+  //     .map(function(item) {
+  //       return `
+  //   <div class="menu3>
+  //   <p class="menutest>${item.name}</p>
+  //   </div>
+  //   ` })
+  //   var entree = data.entrees
+  //   .map(function(item) {
+  //     return `
+  // <div class="menu3>
+  // <p class="menutest>${item.name}</p>
+  // </div>
+  // `
+
+  //     .join("\n")
+  //   $("#menudisplay").html(apps)
+  // })
 
   //   .get("https://obscure-tundra-54269.herokuapp.com/casual-dining").data()
 
