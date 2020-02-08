@@ -22,7 +22,7 @@ body {
   width: 1000px;
   display: flex;
   justify-self: center;
-  margin-top: 45px;
+
   position: relative;
 }
 
@@ -47,8 +47,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+  white-space: normal;
+
   grid-template-areas:
     "pasta ptext"
     "salad stext";
@@ -72,6 +72,59 @@ body {
 
 #ptext {
   padding: 150px;
+}
+
+.ptext {
+  width: 450px;
+  margin: 0;
+}
+
+#tabs {
+  width: 1000px;
+  background-color: white;
+  height: 500px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.content {
+  position: absolute;
+  width: 1000px;
+  padding: 10px;
+  border: 1px solid black;
+  overflow-wrap: normal;
+  display: flex;
+  justify-content: center;
+  left: 212px;
+  top: 1185px;
+  display: none;
+}
+
+/* #tabs li:first-child .content {
+  display: block;
+} */
+
+.show {
+  display: block;
+}
+
+#tabs a.active {
+  background: #999;
+  color: white;
+}
+
+p {
+  overflow-wrap: normal;
+}
+
+#tabs a {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid black;
+  padding: 10px 20px;
 }
 
 .navBar {

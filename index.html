@@ -37,10 +37,69 @@
       </div>
       <div id="specials">
         <img id="pasta" src="assets/pasta.jpg" />
+        <div class="ptext">
         <p id="ptext">
-          Just the thought of pasta makes the mouth water!
+          Just the thought of pasta makes the mouth water! Just the thought of pasta makes the mouth water! Just the thought of pasta makes the mouth water!
         </p>
-    </div>
+        </div>
+      </div>
+      <div class="threetabs">
+          <ul id="tabs">
+            <li>
+            <a class="active" href="#menu" id="menu">Menu</a>
+            <div id="menudisplay" class="content show">
+              <!-- this is where the menu will go -->
+              
+            </div>
+          </li>
+          <li>
+            <a href="#story" id="story">Our Story</a>
+            <div class="content">
+              <p>Ohana is an idea in Hawaiian culture. The word ʻohana means welcome in the Hawaiian language, but in a much wider sense, to include not only one's closer relatives, but also one's cousins, in-laws, friends, race, and other neighbours. <br> Our cuisine incorporates five distinct styles of food, reflecting the diverse food history of settlement and immigration in the Hawaiian Islands. In the pre-contact period of Ancient Hawaii, Polynesian voyagers brought plants and animals to the Islands.</p>
+            </div>
+          </li>
+          <li>
+            <a href="#reservations" id="reservations">Reservations</a>
+            <div class="content">
+              <form>
+                <fieldset>
+                  <div>
+                    <label for="firstname">FIRST NAME</label>
+                    <input type="text" id="firstname" placeholder="John" />
+                  </div>
+                  <div>
+                    <label for="lastname">LAST NAME</label>
+                    <input type="text" id="lastname" placeholder="Doe" />
+                  </div>
+                  <div>
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" placeholder="johndoe@email.com" />
+                  </div>
+                  <div>
+                    <label for="phone">PHONE NUMBER</label>
+                    <input type="tel" id="phone" placeholder="+351 999 9999" />
+                  </div>
+                  <div>
+                    <label for="specialrequests">Special Table Requests</label>
+                    <textarea id="affiliations"></textarea>
+                  </div>
+                  <div>
+                    <label for="partysize">Number in Party</label>
+                    
+                      <input type="number" name="partysize">
+                    </select>
+                  </div>
+                  <div>
+                    <button type="submit">Submit</button>
+                  </div>
+          </li>
+            </div>
+            
+
+
+          </ul>
+        </div>
+    
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
