@@ -14,15 +14,29 @@ $(document).ready(function(e) {
     var apps = data.appetizers.map(function(item) {
       return `
     <div class="menu3>
-    <p class="menutest>${item.name}</p>
+    <p class="menutest">${item.name}</p>
+    <p class="menutest">${item.price}</p>
+    <p class="menutest">${item.description}</p>
     </div>
     `
     })
-    var entree = data.entrees
+    var entree = data.entrees.map(function(item) {
+      return `
+  <div class="menu4>
+  <p class="menuentree">${item.name}</p>
+  <p class="menuentree">${item.price}</p>
+  <p class="menuentree">${item.description}</p>
+  </div>
+  `
+    })
+
+    var desserts = data.desserts
       .map(function(item) {
         return `
-  <div class="menu3>
-  <p class="menutest>${item.name}</p>
+  <div class="menu4>
+  <p class="menuentree">${item.name}</p>
+  <p class="menuentree">${item.price}</p>
+  <p class="menuentree">${item.description}</p>
   </div>
   `
       })
@@ -30,6 +44,7 @@ $(document).ready(function(e) {
       .join("\n")
     $("#menudisplay").html(apps)
     $("#menudisplay").html(entree)
+    $("#menudisplay").html(desserts)
   })
 
   //   .get("https://obscure-tundra-54269.herokuapp.com/casual-dining").data()
