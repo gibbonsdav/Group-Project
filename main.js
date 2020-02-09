@@ -14,9 +14,8 @@ $(document).ready(function(e) {
     var apps = data.appetizers.map(function(item) {
       return `
     <div class="menu3">
-    <h1>Appetizers</h1>
     <h3 class="menutest">${item.name}</h3>
-    <h3 class="menutest">${item.price}</h3>
+    <h3 class="menutest">$${item.price}</h3>
     <p class="menutest">${item.description}</p>
     </div>
     `
@@ -24,9 +23,8 @@ $(document).ready(function(e) {
     var entree = data.entrees.map(function(item) {
       return `
   <div class="menu4">
-  <h1>Entrees</h1>
   <h3 class="menuentree">${item.name}</h3>
-  <h3 class="menuentree">${item.price}</h3>
+  <h3 class="menuentree">$${item.price}</h3>
   <p class="menuentree">${item.description}</p>
   </div>
   `
@@ -36,9 +34,8 @@ $(document).ready(function(e) {
       .map(function(item) {
         return `
   <div class="menu5">
-  <h1>Desserts</h1>
   <h3 class="menuentree">${item.name}</h3>
-  <h3 class="menuentree">${item.price}</h3>
+  <h3 class="menuentree">$${item.price}</h3>
   <p class="menuentree">${item.description}</p>
   </div>
   `
