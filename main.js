@@ -40,7 +40,7 @@ $(document).ready(function(e) {
   </div>
   `
       })
-
+      // Below, if I send the apps, entrees, and desserts to different divs they will show up on the page but they will cover up stuff they shouldnt like the reservation and story content. If I send them to the same div as below, only the last one called will show up at all
       .join("\n")
     $("#menudisplay").html(apps)
     $("#menudisplay").html(entree)

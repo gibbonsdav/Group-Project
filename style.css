@@ -90,6 +90,10 @@ body {
   margin-top: auto;
 }
 
+.threetabs {
+  display: flex;
+}
+
 .content {
   position: absolute;
   width: 1000px;
