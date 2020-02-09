@@ -22,8 +22,12 @@ body {
   width: 1000px;
   display: flex;
   justify-self: center;
+}
 
-  position: relative;
+#logo {
+  position: absolute;
+  z-index: 1;
+  width: 300px;
 }
 
 #backupmenuspot {
@@ -33,7 +37,7 @@ body {
   background-color: lightblue;
 }
 
-#main img {
+#main .cafe {
   position: relative;
   width: 100%;
   display: flex;
@@ -136,6 +140,11 @@ p {
   border-top-right-radius: 5px;
   border: 1px solid black;
   padding: 10px 20px;
+}
+
+.show {
+  display: flex;
+  justify-content: space-around;
 }
 
 #resform {
