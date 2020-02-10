@@ -98,7 +98,7 @@ body {
   list-style: none;
   display: flex;
   justify-content: center;
-  margin-top: auto;
+  margin-top: 0;
 }
 
 .threetabs {
@@ -210,4 +210,156 @@ p {
 }
 .Contact {
   margin-top: -20px;
+}
+
+.SpecialC {
+  width: 320px;
+  position: relative;
+  margin: auto;
+  margin-left: 10px;
+}
+.Specials {
+  display: none;
+}
+.SpText {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+#ptext {
+  padding: 150px;
+}
+.ptext {
+  width: 508px;
+  margin: auto;
+}
+
+.ContactUs {
+  display: flex;
+  background: grey;
+  padding: 40px;
+}
+.CDetails {
+  display: flex;
+  flex-direction: column;
+  width: 415px;
+}
+#Google {
+  margin-left: 140px;
+  width: 400px;
+  height: 300px;
+  border: 1px solid grey;
+  border-radius: 18px;
+}
+.ContactUs input {
+  height: 32px;
+}
+#Submit {
+  width: 52px;
+  margin-top: 9px;
+  height: 21px;
+}
+#Comments {
+  height: 100px;
+}
+.CDetails input {
+  width: 200px;
+}
+.Contact {
+  margin-top: -20px;
+}
+.threetabs {
+  height: 500px;
+}
+.Bottom {
+  position: relative;
+}
+.BAddress {
+  position: absolute;
+  top: 347px;
+  right: 66px;
+}
+.BPhone {
+  position: absolute;
+  top: 373px;
+  right: 170px;
+}
+#EmailSign {
+  width: 5px;
+}
+.EmailLabel {
+  position: absolute;
+  top: 229px;
+  left: 60px;
+}
+#SpecialsContainer {
+  background-color: #f4f4f4;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  text-overflow: ellipsis;
+  white-space: normal;
+  margin: 0 auto;
+}
+.Specials img {
+  width: 250px;
+}
+.LearnMore {
+  position: absolute;
+  top: 1005px;
+  right: 475px;
+  height: 55px;
+  width: 135px;
+}
+#FAQsContainer {
+  display: flex;
+  justify-content: center;
+  background: aqua;
+  padding: 60px;
+  position: relative;
+}
+.Facebook {
+  position: absolute;
+  bottom: 25px;
+  right: 475px;
+}
+.Instagram {
+  position: absolute;
+  bottom: 25px;
+  right: 550px;
+}
+.Twitter {
+  position: absolute;
+  bottom: 25px;
+  right: 400px;
+}
+.FAQs button {
+  background: transparent;
+  border: none;
 }

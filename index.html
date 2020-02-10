@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Ohana's Table</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <div class="navBar">
@@ -36,14 +42,24 @@
         <img id="logo" src="assets/logo2.png">
         <img class="cafe" src="assets/Cafe Photo.jpg" />
       </div>
-      <div id="specials">
-        <img id="pasta" src="assets/pasta.jpg" />
-        <div class="ptext">
-        <p id="ptext">
-          Just the thought of pasta makes the mouth water! Just the thought of pasta makes the mouth water! Just the thought of pasta makes the mouth water!
-        </p>
+      
+        <div id="SpecialsContainer">
+        <div class="SpecialC">
+          <div class="Specials fade">
+            <img src="assets/pasta.jpg" style="width:100%">
+            <div class="SpText">Pasta</div>
+          </div>
+          <div class="Specials fade">
+            <img src="assets/AhiTuna.jpg" style="width:100%">
+            <div class="SpText">Ahi Tuna</div>
+          </div>
+          <div class="Specials fade">
+            <img src="assets/BananaCream.jpg" style="width:100%">
+            <div class="SpText">Banana Cream Pie</div>
+          </div>
         </div>
-      </div>
+          
+          </div>
       
       <div class="threetabs">
           <ul id="tabs">
@@ -139,25 +155,27 @@
               <input id="LastName" type="text" placeholder="Your last name">
               <label for="Email">Email</label>
               <input type="email" id="Email" placeholder="you@example.com">
-              <label for="EmailSign">Would you like to sign-up for newsletters?</label>
               <input type="checkbox" id="EmailSign">
+              <label class="EmailLabel" for="EmailSign">Would you like to sign-up for newsletters?</label>
               <label for="Comments">Your comments</label>
               <textarea id="Comments" placeholder="tell, or ask us anything!"></textarea>
               <button id="Submit">Submit</button>
             </form>
+            <p class="BAddress">1112 S Casino Center Blvd, Las Vegas, NV 89104</p>
+            <p class="BPhone">P. (702) 560-5326</p>
             <iframe id="Google" width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJBe5CsprDyIARIjNsrohRExQ&key=AIzaSyD1OXEVTltgeSGqoNoe3ScES_-6AXHbT5A" allowfullscreen></iframe>
           </div>
-          <div class="FAQs">
+          <div id="FAQsContainer">
+            <div class="FAQs">
             <button href="#FAQ" class="Freq">FAQ</button>
             <button href="#Careers" class="Careers">Careers</button>
             <button href="#T&C" class="T&C">Terms & Conditions</button>
             <button href="#GCs" class="Gifts">Gifts & Merch</button>
             <button href="#BusinessInq" class="Business">Business Inquiries</button>
-            <button href="#FB" class="Facebook"><i class="fab fa-facebook-f"></i></button>
-            <button href="#Twit" class="Twitter"><i class="fab fa-twitter"></i></button>
-            <button href="#IG" class="Instagram"><i class="fab fa-instagram"></i></button>
-            <p class="BAddress">1112 S Casino Center Blvd, Las Vegas, NV 89104</p>
-            <p class="BPhone">P. (702) 560-5326</p>
+            <button href="#FB" class="Facebook"><i class="fab fa-facebook-f" style="font-size: large;"></i></button>
+            <button href="#Twit" class="Twitter"><i class="fab fa-twitter" style="font-size: large;"></i></button>
+            <button href="#IG" class="Instagram"><i class="fab fa-instagram" style="font-size: large;"></i></button>
+            </div>
           </div>
         </footer>
     
