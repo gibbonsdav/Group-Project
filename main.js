@@ -61,7 +61,7 @@ $(document).ready(function(e) {
       slideIndex = 1
     }
     slides[slideIndex - 1].style.display = "block"
-    setTimeout(showSlides, 86400000)
+    setTimeout(showSlides, 1800000)
   }
 
   //   .get("https://obscure-tundra-54269.herokuapp.com/casual-dining").data()
